@@ -23,7 +23,6 @@ public class BasePage {
 	@Before
 	public void goToHomePage() throws MalformedURLException {
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		
 		driver = new RemoteWebDriver(new URL("http://zalenium.eon-software.com:4444/wd/hub"), dc);
 		driver.manage().window().maximize();
 		driver.get("https://www.eon.de/de/pk.html");
